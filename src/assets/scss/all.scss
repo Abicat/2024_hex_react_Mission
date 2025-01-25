@@ -1,0 +1,9 @@
+// 全部載入
+// @import 'bootstrap/scss/bootstrap';
+
+// vendors
+@import './vendors/bootstrap';
+// base
+@import './base/reset';
+
+@import './pages/main'
