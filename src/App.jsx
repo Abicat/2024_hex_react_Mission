@@ -12,8 +12,11 @@ function App() {
   const [mainImage, setMainImage] = useState(null);
 
   const [account, setAccount] = useState({
-    username: "example@test.com",
-    password: "example",
+    // username: "example@test.com",
+    // password: "example",
+    username: "",
+    password: ""
+
   });
 
   const handleInputChange = (e) => {
@@ -37,7 +40,7 @@ function App() {
         fetchProducts();
       } catch (error) {
         alert("登入失敗");
-        console.log("登入失敗：", error);
+        // console.log("登入失敗：", error);
       }
     };
     login();
@@ -52,7 +55,7 @@ function App() {
       setProducts(productsArray);
     } catch (error) {
       alert("無法獲取產品列表，請稍後再試");
-      console.error("獲取產品列表錯誤：", error);
+      // console.error("獲取產品列表錯誤：", error);
     }
   };
 
