@@ -105,7 +105,7 @@ function App() {
                       <th scope="row">{product.title}</th>
                       <td>{product.origin_price}</td>
                       <td>{product.price}</td>
-                      <td>{product.is_enabled}</td>
+                      <td>{product.is_enabled ? "是" : "否"}</td>
                       <td>
                         <button
                           onClick={() => changeDetail(product)}
